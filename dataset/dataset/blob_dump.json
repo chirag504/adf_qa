@@ -1,0 +1,19 @@
+{
+	"name": "blob_dump",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blob_dump",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "sample_data.json",
+				"fileSystem": "adf-dev"
+			}
+		},
+		"schema": {}
+	}
+}

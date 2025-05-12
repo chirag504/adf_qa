@@ -1,0 +1,23 @@
+{
+	"name": "sample_api",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sample_api",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"object_id": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().object_id",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	}
+}
